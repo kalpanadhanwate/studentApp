@@ -1,0 +1,19 @@
+
+spring: 
+   datasource: 
+         driverClassName: com.mysql.jdbc.Driver 
+         url: jdbc:mysql://10.10.18.18:3306/student
+         username: root 
+         password: root
+   jpa:
+    hibernate:
+      ddl-auto: update
+   config:
+    name: studentApp
+
+
+server:
+  port: 8001
+security: 
+   basic: 
+     enabled: false  
